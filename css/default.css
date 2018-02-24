@@ -254,28 +254,17 @@ div.user-image {
   padding-left: 2px;
   font-family: 'ubuntu';
 }
-.widget-box {
-  background: #fff;
-  border: 1px solid #E0E0E0;
-  float: left;
-  width: 100%;
-  margin: 0 0 15px 15px;
+.box{
+  border:1px solid #fff;
+  width:1025px;
+  position: relative;
+  left:2%;
+  top:95px;
+  height:auto;
+  background-color: #fff;
+  box-shadow: 2px 2px 5px 5px #aaa;
 }
-.widget-header {
-  background: #279BE4;
-}
-.widget-header h2 {
-  font-size: 15px;
-  font-weight: normal;
-  margin: 0;
-  padding: 11px 15px;
-  color: #F9F9F9;
-  display: inline-block;
-}
-.sample-widget {max-width: 47%;}
-.widget-box .fa-cog {
-  float: right;
-  color: #fff;
-  margin: 11px 11px 0 0;
-  font-size: 20px;
+.box-header{
+  position: relative;
+  top:-45px;
 }
