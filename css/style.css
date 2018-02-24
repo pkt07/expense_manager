@@ -1,5 +1,5 @@
 body{
-  background-color: #eeeefe;
+  background-color: #E9EEF4;
   overflow: hidden;
 
 }
@@ -179,7 +179,9 @@ box-shadow: 2px 2px 3px 3px rgba(0,0,0,0.33);
   position: relative;
   top:-135px;
   font-size: 0.6rem;
-  left:-90px;
+  left:-80px;
+  font-weight: bold;
+  font-family: 'ubuntu';
 }
 .footer{
   border:1px solid #640344;
@@ -198,7 +200,7 @@ box-shadow: 2px 2px 3px 3px rgba(0,0,0,0.33);
 }
 .text1{
   position: relative;
-  top:-35px;
+  top:-34px;
   left:-95px;
   color: #fff;
   font-family: 'ubuntu';
