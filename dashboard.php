@@ -1,3 +1,16 @@
+<?php 
+  session_start(); 
+
+  if (!isset($_SESSION['username'])) {
+  	$_SESSION['msg'] = "You must log in first";
+  	header('location: login.php');
+  }
+  if (isset($_GET['logout'])) {
+  	session_destroy();
+  	unset($_SESSION['username']);
+  	header("location: login.php");
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,6 +61,7 @@
             <div class="nav-profile-image">
               <img src="images/in.jpg" alt="profile-img" alt="profile image">
               <div class="nav-profile-name">Prabhat Tripathi<i class="fa fa-caret-down"></i></div>
+              
             </div>
           </li>
         </ul>

@@ -1,0 +1,113 @@
+body{
+overflow:hidden;
+background-color: #E9EEF4;
+}
+.nav{
+  position: relative;
+  top:-8px;
+  left:-9px;
+  height: 70px;
+  width:100vw;
+  box-shadow: 0px 2px #ddd;
+  border:2px solid #ccc;
+  background-color: #3017A9;
+}
+
+form, .content {
+  width: 30%;
+  position:relative;
+  top:40px;
+  margin: 0px auto;
+  padding: 20px;
+  border: 2px solid #B0C4DE;
+  background: white;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow:2px 2px 5px 5px #ccc;
+}
+.input-group {
+  margin: 10px 0px 10px 0px;
+}
+.input-group label {
+  display: block;
+  text-align: left;
+  margin: 3px;
+  font-weight:bold;
+  font-family:'ubuntu';
+}
+.input-group input {
+  height: 30px;
+  width: 93%;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.btn {
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background: #5F9EA0;
+  border: none;
+  border-radius: 5px;
+}
+.error {
+  width: 92%; 
+  margin: 0px auto; 
+  padding: 10px; 
+  border: 1px solid #a94442; 
+  color: #a94442; 
+  background: #f2dede; 
+  border-radius: 5px; 
+  text-align: left;
+}
+.success {
+  color: #3c763d; 
+  background: #dff0d8; 
+  border: 1px solid #3c763d;
+  margin-bottom: 20px;
+}
+.para{
+position:relative;
+font-weight:bold;
+font-family:'ubuntu';
+}
+
+.footer{
+  border:1px solid #640344;
+  position: relative;
+  bottom: -240px;
+  left:-9px;
+  width: 100vw;
+  height:55px;
+  background-color: #3017A9;
+}
+.footer1{
+  border:1px solid #640344;
+  position: relative;
+  bottom: -100px;
+  left:-9px;
+  width: 100vw;
+  height:55px;
+  background-color: #3017A9;
+}
+.text{
+  position: relative;
+  left:-305px;
+  color: #fff;
+  font-family: 'ubuntu';
+}
+.text1{
+  position: relative;
+  top:-34px;
+  left:-95px;
+  color: #fff;
+  font-family: 'ubuntu';
+}
+.text2{
+  position: relative;
+  float: right;
+  top:-85px;
+  left:-100px;
+  color: #fff;
+  font-family: 'ubuntu';
+}
