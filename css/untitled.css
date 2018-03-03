@@ -26,17 +26,18 @@ table td {
 #button {
   position: relative;
   top: -85px;
-  color: #F5F7FA;
+  color:#333;
   padding: 20px;
   text-align: center;
   line-height: 24px;
-  width: 200px;
+  width: 180px;
   background-color: #4FC1E9;
   border-radius: 3px;
   cursor: pointer;
   margin: auto;
   box-shadow: 0 3px #4A89DC;
   transition: 0.1s ease;
+  font-weight:bold;
 }
 
 #button:active {
@@ -71,6 +72,7 @@ form select, form input {
   font-size: 1em;
   border:1px solid #aaa;
   background-color:#eee;
+   width:120%;
 }
 .item-name{
   font-weight: bold;
@@ -78,6 +80,8 @@ form select, form input {
   font-size: 1em;
   border:1px solid #aaa;
   background-color:#eee;
+   width:120%;
+   left:50px;
 }
 .date{
   font-weight: bold;
@@ -86,7 +90,9 @@ form select, form input {
   border:1px solid #aaa;
   background-color:#eee;
   position: relative;
-  top:-2px;
+  top:60px;
+  left:-50px;
+   width:100%;
 }
 .data-sent{
   font-weight: bold;
@@ -96,6 +102,8 @@ form select, form input {
   background-color:#eee;
   position: relative;
   top:-2px;
+  width:60%;
+  left:-50px;
 }
 form selectactive, form inputactive {
   border: 1px solid #4FC1E9;
@@ -121,21 +129,21 @@ form span {
 }
 .category{
   position: relative;
-  left:-18%;
+  left:-10%;
   top:-30px;
 }
 .cal{
   position: relative;
-  left:51.5%;
-  top:-95px;
+  left:42%;
+  top:-90px;
 }
 .amnt{
   position: relative;
-  left:54%;
+  left:55%;
   top:-95px;
 }
 #type {
-  width: 50px;
+  width:15%;
 }
 
 #date {
@@ -154,4 +162,61 @@ form span {
   margin: auto;
   text-align: center;
 }
+.nav {
+    display: block;
+    font: 13px Helvetica, Tahoma, serif;
+    text-transform: uppercase;
+    margin: 0; 
+    padding: 0;
+}
 
+.nav li {
+    display: inline-block;
+    list-style: none;
+}
+
+.nav .button-dropdown {
+    position: relative;
+}
+
+.nav li a {
+    display: block;
+    color: #333;
+    background-color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.nav li a span {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 10px;
+    color: #999;
+}
+
+.nav li a:hover, .nav li a.dropdown-toggle.active {
+    background-color: #289dcc;
+    color: #fff;
+}
+
+.nav li a:hover span, .nav li a.dropdown-toggle.active span {
+    color: #fff;
+}
+
+.nav li .dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    margin-top: 3px;
+    text-align: left;
+}
+
+.nav li .dropdown-menu.active {
+    display: block;
+}
+
+.nav li .dropdown-menu a {
+    width: 150px;
+}
