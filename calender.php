@@ -35,7 +35,7 @@
       <li><a href="#"><i class="fa fa-usd"></i> Expense Manager</a></li>
       <li><a href="#"><i class="fa fa-line-chart"></i>Visualization</a></li>  
       
-      <li><a href="#"><i class="fa fa-calendar-o"></i> Reservations</a></li>
+      <li><a href="reservation.php"><i class="fa fa-calendar-o"></i> Reservations</a></li>
       <li class="active"><a href="#"><i class="fa fa-calendar"></i> Calendar</a></li>
     </ul>
   </div>
@@ -74,7 +74,7 @@
 <h1 class="cal_head">A calender,so that you can spent wisely</h1>
  <div class="calender">
   <ul class="month">
-    <li>
+    <li class="wek">
       <h1>January</h1>
       <h2>2018</h2>
     </li>
@@ -82,13 +82,13 @@
     <span class="next">&#10095;</span>
   </ul>
   <ul class="weeks">
-    <li>Sa</li>
-    <li>Su</li>
-    <li>Mo</li>
-    <li>Tu</li>
-    <li>We</li>
-    <li>Th</li>
-    <li>Fr</li>
+    <li class="wek">Sa</li>
+    <li class="wek">Su</li>
+    <li class="wek">Mo</li>
+    <li class="wek">Tu</li>
+    <li class="wek">We</li>
+    <li class="wek">Th</li>
+    <li class="wek">Fr</li>
   </ul>
   <ul class="days">
 

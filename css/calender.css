@@ -1,7 +1,4 @@
-*{
-  box-sizing: border-box;
-  
-}
+
 ul{
   list-style-type: none;
   text-align: center;
@@ -27,7 +24,7 @@ ul{
   background-color: #2ecc71;
   padding: 40px;
   color: #ecf0f1;
-  width: 100%;
+  width: 91%;
   position: relative;
 }
 .calender .month .next,.calender .month .prev{

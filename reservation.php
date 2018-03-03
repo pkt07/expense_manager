@@ -17,22 +17,23 @@
 <title>Expense Manager</title>
 <link rel="stylesheet" href="css/default.css">
 <link rel="stylesheet" href="css/untitled.css">
+<link rel="stylesheet" href="css/reservation.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
- </head> 
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.timekit.io/booking-js/v1/booking.min.js" defer></script> </head> 
 <section id="sidebar"> 
   <div class="white-label">
   <img src = "images/logo.jpg" height="50px" width="100px">
   </div> 
   <div id="sidebar-nav">   
     <ul>
-      <li class="active"><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+      <li><a href="dashboard.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
       <li><a href="#"><i class="fa fa-desktop"></i>Profile</a></li>
       <li><a href="#"><i class="fa fa-usd"></i> Expense Manager</a></li>
       <li><a href="#"><i class="fa fa-line-chart"></i>Visualization</a></li>  
       
-      <li><a href="reservation.php"><i class="fa fa-calendar-o"></i> Reservations</a></li>
+      <li class="active"><a href="#"><i class="fa fa-calendar-o"></i> Reservations</a></li>
       <li><a href="calender.php"><i class="fa fa-calendar"></i> Calendar</a></li>
     </ul>
   </div>
@@ -68,63 +69,16 @@
       </div>
     </div>
   </div>
-  <div class="content">
-    <div class="content-header">
-      <h1 class="heading">Expense Manager</h1>
-      <p>Simple way to avoid overspending and manage Expenses</p>
-    </div>
-    <div class="box">
-    <h1 class="box-header"><center>Simple way to Keep the Expense Record is to maintain here</center></h1>
-
-    <div id="form-box">
-	<form>
-	  <div class="money">
-	      <select name="type" class="type">
-	          <option value="cash">Cash</option>
-	          <option value="cryptocoin">Paytm</option>
-	          <option value="card">Card</option>
-	          <option value="other">Other Wallet</option>
-	      </select>
-	  </div>
-	  
-	  <div class="category">
-	    <select name="item-name" class="item-name">
-	          <option>Grocery</option>
-	          <option>Entertainment</option>
-	          <option>Vehicle</option>
-	          <option>Food</option>
-	          <option>Miscellaneous</option>
-	    </select>
-	  </div>
-	  
-	  <div class="cal">
-	     <input type="date" name="date" class="date">
-	  </div>
-	  
-	  <div class="amnt">
-	    <input type="number" name="amount" placeholder="Amount Spent" class="data-sent">
-	  </div>
-	  
-	</form>
-	</div>
-
-	<div id="button"><span>Add expense</span></div>
-
-	<table>
-	  <tr>
-	    <th id="type" class="center">Type</th>
-	    <th><center>Category</center></th>
-	    <th id="date">Date</th>
-	    <th style="text-align: right" id="amount">Amount</th>
-	  </tr>
-	  <tr id="if-empty">
-	    <td colspan="4"><span>Your added items will show up here!</span></td>
-	  </tr>
-
-	</table>
-
-	</div>
+  
+<div id="page">
+  <div class="page-header">
+    <h1>Reservation Schedule So that you can make plans about your expenses</h1>
   </div>
+  <div id="calendar"></div>
+</div>
+
+
 </section>
 <script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/reservation.js"></script>
 </html>
