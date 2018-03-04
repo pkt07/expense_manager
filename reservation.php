@@ -30,8 +30,8 @@
     <ul>
       <li><a href="dashboard.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
       <li><a href="#"><i class="fa fa-desktop"></i>Profile</a></li>
-      <li><a href="#"><i class="fa fa-usd"></i> Expense Manager</a></li>
-      <li><a href="#"><i class="fa fa-line-chart"></i>Visualization</a></li>  
+      <li><a href="dashboard.php"><i class="fa fa-usd"></i> Expense Manager</a></li>
+      <li><a href="visualization.php"><i class="fa fa-line-chart"></i>Visualization</a></li>  
       
       <li class="active"><a href="#"><i class="fa fa-calendar-o"></i> Reservations</a></li>
       <li><a href="calender.php"><i class="fa fa-calendar"></i> Calendar</a></li>

@@ -15,28 +15,28 @@
 <html lang="en">
 <head>
 <title>Expense Manager</title>
-<link rel="stylesheet" href="css/calender.css">
 <link rel="stylesheet" href="css/default.css">
 <link rel="stylesheet" href="css/untitled.css">
-
+<link rel="stylesheet" href="css/visual.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="http://www.amcharts.com/lib/3/amcharts.js" type="text/javascript"></script>
+<script src="http://www.amcharts.com/lib/3/serial.js" type="text/javascript"></script>
  </head> 
 <section id="sidebar"> 
   <div class="white-label">
-    <img src = "images/logo.jpg" height="50px" width="100px">
-
+  <img src = "images/logo.jpg" height="50px" width="100px">
   </div> 
   <div id="sidebar-nav">   
     <ul>
-      <li ><a href="dashboard.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+      <li><a href="dashboard.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
       <li><a href="#"><i class="fa fa-desktop"></i>Profile</a></li>
-      <li><a href="dashboard.php"><i class="fa fa-usd"></i> Expense Manager</a></li>
-      <li><a href="visualization.php"><i class="fa fa-line-chart"></i>Visualization</a></li>  
+      <li><a href="dashboard.php"><i class="fa fa-usd"></i>Expense Manager</a></li>
+      <li class="active"><a href="visualization.php"><i class="fa fa-line-chart"></i>Visualization</a></li>  
       
       <li><a href="reservation.php"><i class="fa fa-calendar-o"></i> Reservations</a></li>
-      <li class="active"><a href="#"><i class="fa fa-calendar"></i> Calendar</a></li>
+      <li><a href="calender.php"><i class="fa fa-calendar"></i> Calendar</a></li>
     </ul>
   </div>
 </section>
@@ -71,30 +71,18 @@
       </div>
     </div>
   </div>
-<h1 class="cal_head">A calender,so that you can spent wisely</h1>
- <div class="calender">
-  <ul class="month">
-    <li class="wek">
-      <h1>January</h1>
-      <h2>2018</h2>
-    </li>
-    <span class="prev">&#10094;</span>
-    <span class="next">&#10095;</span>
-  </ul>
-  <ul class="weeks">
-    <li class="wek">Sa</li>
-    <li class="wek">Su</li>
-    <li class="wek">Mo</li>
-    <li class="wek">Tu</li>
-    <li class="wek">We</li>
-    <li class="wek">Th</li>
-    <li class="wek">Fr</li>
-  </ul>
-  <ul class="days">
-
-  </ul>
+  <h1>Graph to input your data categorize wise with amount to Visualize the data</h1>
+<div id="chartdiv" style="width: 100%; height: 355px;"></div>
+<div id="data-table">
+    <div class="data-row">
+        <input class="data-cell data-category" value="Food" />
+        <input class="data-cell data-value" value="1200" type="number" step="10" />
+        <input class="data-button delete-button" type="button" value="X" />
+    </div>
 </div>
-</section>
-<script type="text/javascript" src="js/calender.js"></script>
+<br />
+<input type="button" value="click to add another cathegory and amount" onclick="addRow()" class="data-button" id="add-row" style="position: relative;left:60%;font-weight: bold;top:-30px;" />
 
+</section>
+<script type="text/javascript" src="js/visual.js"></script>
 </html>

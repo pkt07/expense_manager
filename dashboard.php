@@ -30,7 +30,7 @@
       <li class="active"><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
       <li><a href="#"><i class="fa fa-desktop"></i>Profile</a></li>
       <li><a href="#"><i class="fa fa-usd"></i> Expense Manager</a></li>
-      <li><a href="#"><i class="fa fa-line-chart"></i>Visualization</a></li>  
+      <li><a href="visualization.php"><i class="fa fa-line-chart"></i>Visualization</a></li>  
       
       <li><a href="reservation.php"><i class="fa fa-calendar-o"></i> Reservations</a></li>
       <li><a href="calender.php"><i class="fa fa-calendar"></i> Calendar</a></li>
@@ -98,11 +98,11 @@
 	  </div>
 	  
 	  <div class="cal">
-	     <input type="date" name="date" class="date">
+	     <input type="date" name="date" class="date" required>
 	  </div>
 	  
 	  <div class="amnt">
-	    <input type="number" name="amount" placeholder="Amount Spent" class="data-sent">
+	    <input type="number" name="amount" placeholder="Amount Spent" class="data-sent" required>
 	  </div>
 	  
 	</form>
