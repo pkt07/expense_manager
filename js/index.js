@@ -1,5 +1,5 @@
  $(document).ready(function (){
-  $name = $('input[name="item-name"'); 
+  $name = $('select[name="item-name"'); 
   $amount = $('input[name="amount"'); 
   $type = $('select[name="type"');
   $date = $('input[name="date"');

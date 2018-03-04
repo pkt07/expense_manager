@@ -35,6 +35,7 @@
       
       <li class="active"><a href="#"><i class="fa fa-calendar-o"></i> Reservations</a></li>
       <li><a href="calender.php"><i class="fa fa-calendar"></i> Calendar</a></li>
+       <li><a href="login.php"><i class="fa fa-user"></i>Log Out</a></li>
     </ul>
   </div>
 </section>
